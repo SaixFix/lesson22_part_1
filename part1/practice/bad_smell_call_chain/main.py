@@ -31,8 +31,8 @@ class Planet:
 
 
 class Person:
-    def __init__(self):
-        self.planet = Planet()
+    def __init__(self, planet: Planet, country: Country, city: City, room_name: Room):
+        self.planet = planet
 
     def get_person_room(self):
         return self.planet.get_contry().get_city().get_street().get_room().get_name()
